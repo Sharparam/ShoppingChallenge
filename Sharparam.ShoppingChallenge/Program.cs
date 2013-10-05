@@ -14,7 +14,7 @@ namespace Sharparam.ShoppingChallenge
 
             var shopper = new ThisPoorGuy(12000, store);
 
-            var wife = new Wife(shopper);
+            var wife = shopper.Wife;
 
             Console.WriteLine(shopper.Funds);
 
