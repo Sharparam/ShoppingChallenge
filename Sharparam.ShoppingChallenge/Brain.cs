@@ -19,7 +19,8 @@ namespace Sharparam.ShoppingChallenge
 
         public void Work()
         {
-            _commandQueue.Dequeue().Execute();
+            if (_commandQueue.Count >= 1)
+                _commandQueue.Dequeue().Execute();
         }
 
         public void Process(ICommand command)
