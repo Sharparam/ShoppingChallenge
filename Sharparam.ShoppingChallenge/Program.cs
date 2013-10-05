@@ -20,9 +20,9 @@ namespace Sharparam.ShoppingChallenge
 
             wife.DemandEggs(12);
 
-            Console.WriteLine("Store has {0} eggs, shopper has {1} eggs, shopper has {2} funds",
+            Console.WriteLine("Store has {0} eggs, shopper has {1} eggs, shopper has {2} funds. Shopper's cart is worth {3}",
                               store.Items.Count(i => i is Egg), shopper.Cart.Items.Count(i => i is Egg),
-                              shopper.Funds);
+                              shopper.Funds, shopper.Cart.Value);
 
             Console.ReadLine();
         }
